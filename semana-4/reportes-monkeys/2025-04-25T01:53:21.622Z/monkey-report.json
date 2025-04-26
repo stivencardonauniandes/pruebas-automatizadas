@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-25T01:53:25.336Z",
+    "end": "2025-04-25T01:53:35.459Z",
+    "duration": 10123,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fba0d62d-9a0e-4d4c-ab38-cc7f9c5ed110",
+      "title": "",
+      "fullFile": "cypress/e2e/monkey.cy.js",
+      "file": "cypress/e2e/monkey.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e34c5d32-3ff1-4674-9706-2a2c3a182b21",
+          "title": "monkey",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test random events",
+              "fullTitle": "monkey test random events",
+              "timedOut": null,
+              "duration": 10096,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"Before All\",\n    \"value\": {\n      \"viewport\": \"undefinedxundefined\",\n      \"seed\": 13642579,\n      \"delay\": 1000\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 8,\n      \"scroll\": 8,\n      \"keypress\": 98,\n      \"viewport\": 88,\n      \"navigation\": 1,\n      \"smartClick\": 69,\n      \"smartCleanup\": 57,\n      \"smartInput\": 57\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable button Element\",\n      \"subtype\": \"right click\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 8,\n      \"scroll\": 8,\n      \"keypress\": 98,\n      \"viewport\": 88,\n      \"navigation\": 1,\n      \"smartClick\": 68,\n      \"smartCleanup\": 57,\n      \"smartInput\": 57\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll left\",\n      \"previousPosition\": \"(0, 0)\",\n      \"newPosition\": \"(0, 0)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 8,\n      \"scroll\": 7,\n      \"keypress\": 98,\n      \"viewport\": 88,\n      \"navigation\": 1,\n      \"smartClick\": 68,\n      \"smartCleanup\": 57,\n      \"smartInput\": 57\n    }\n  },\n  \"videos/monkey.cy.js.mp4\"\n]",
+              "code": "const addActionContext = details => cy.addActionContext(details);\n// Extracts available actions with remaining counts and calculates total actions left.\nlet [names, actionsLeft] = Object.entries(actions).reduce((acc, a) => {\n  if (a[1] > 0) return [[...acc[0], a[0]], acc[1] + a[1]];\n  return acc;\n}, [[], 0]);\nconst availableActions = names.length - 1;\nlet index;\nwhile (actionsLeft > 0) {\n  cy.addActionContext({\n    title: \"Actions left\",\n    value: names.reduce((acc, a) => {\n      acc[a] = actions[a];\n      return acc;\n    }, {})\n  });\n  index = names[randInt(0, availableActions)];\n  if (actions[index] > 0) {\n    events[index](addActionContext);\n    cy.wait(delay);\n    actions[index]--;\n    actionsLeft--;\n  } else {\n    // remove the action from the list once it is exhausted\n    delete actions[index];\n    names = names.filter(n => n !== index);\n  }\n}",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.\n    at Array.clearInput (webpack://misw-4103-monkey/./cypress/support/commands/page.js:63:5)\n    at Context.eval (webpack://misw-4103-monkey/./cypress/support/commands/page.js:78:17)\n    at wrapped (http://localhost:3001/__cypress/runner/cypress_runner.js:140147:43)",
+                "diff": null
+              },
+              "uuid": "7ced5d69-feb9-475f-b363-e54445842a90",
+              "parentUUID": "e34c5d32-3ff1-4674-9706-2a2c3a182b21",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7ced5d69-feb9-475f-b363-e54445842a90"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10096,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "monkey-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/2025-04-25T01:53:21.622Z",
+        "reportFilename": "monkey-report",
+        "overwite": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

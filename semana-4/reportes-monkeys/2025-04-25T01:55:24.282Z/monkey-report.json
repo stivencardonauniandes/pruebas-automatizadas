@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-25T01:55:27.814Z",
+    "end": "2025-04-25T01:55:35.304Z",
+    "duration": 7490,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c9d1f8ad-fd2e-4cf1-aa5f-91929322447e",
+      "title": "",
+      "fullFile": "cypress/e2e/monkey.cy.js",
+      "file": "cypress/e2e/monkey.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e7948eed-0f4d-45aa-96a0-3565adfab52e",
+          "title": "monkey",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test random events",
+              "fullTitle": "monkey test random events",
+              "timedOut": null,
+              "duration": 7457,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"Before All\",\n    \"value\": {\n      \"viewport\": \"undefinedxundefined\",\n      \"seed\": 734285,\n      \"delay\": 1000\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 27,\n      \"keypress\": 68,\n      \"viewport\": 98,\n      \"navigation\": 67,\n      \"smartClick\": 64,\n      \"smartInput\": 27\n    }\n  },\n  \"videos/monkey.cy.js.mp4\"\n]",
+              "code": "const addActionContext = details => cy.addActionContext(details);\n// Extracts available actions with remaining counts and calculates total actions left.\nlet [names, actionsLeft] = Object.entries(actions).reduce((acc, a) => {\n  if (a[1] > 0) return [[...acc[0], a[0]], acc[1] + a[1]];\n  return acc;\n}, [[], 0]);\nconst availableActions = names.length - 1;\nlet index;\nwhile (actionsLeft > 0) {\n  cy.addActionContext({\n    title: \"Actions left\",\n    value: names.reduce((acc, a) => {\n      acc[a] = actions[a];\n      return acc;\n    }, {})\n  });\n  index = names[randInt(0, availableActions)];\n  if (actions[index] > 0) {\n    events[index](addActionContext);\n    cy.wait(delay);\n    actions[index]--;\n    actionsLeft--;\n  } else {\n    // remove the action from the list once it is exhausted\n    delete actions[index];\n    names = names.filter(n => n !== index);\n  }\n}",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.\n    at Context.eval (webpack://misw-4103-monkey/./cypress/support/commands/keboard.js:96:5)\n    at wrapped (http://localhost:3001/__cypress/runner/cypress_runner.js:140147:43)",
+                "diff": null
+              },
+              "uuid": "07db035b-9eab-4c6b-b67f-dc51ce65cc88",
+              "parentUUID": "e7948eed-0f4d-45aa-96a0-3565adfab52e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "07db035b-9eab-4c6b-b67f-dc51ce65cc88"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7457,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "monkey-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/2025-04-25T01:55:24.282Z",
+        "reportFilename": "monkey-report",
+        "overwite": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-25T01:51:04.673Z",
+    "end": "2025-04-25T01:51:33.825Z",
+    "duration": 29152,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "43a49482-3d52-4bab-9472-70a7e3cece2a",
+      "title": "",
+      "fullFile": "cypress/e2e/monkey.cy.js",
+      "file": "cypress/e2e/monkey.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1da7b626-1baa-4de9-9a19-2d2c5774b6cb",
+          "title": "monkey",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test random events",
+              "fullTitle": "monkey test random events",
+              "timedOut": null,
+              "duration": 29124,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"Before All\",\n    \"value\": {\n      \"viewport\": \"undefinedxundefined\",\n      \"seed\": 11514240,\n      \"delay\": 1000\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 6,\n      \"keypress\": 97,\n      \"viewport\": 31,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"tab\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 6,\n      \"keypress\": 96,\n      \"viewport\": 31,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Viewport\",\n    \"value\": {\n      \"viewport\": \"iphone-5\",\n      \"orientation\": \"portrait\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 6,\n      \"keypress\": 96,\n      \"viewport\": 30,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"type\",\n      \"input\": \"E\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 6,\n      \"keypress\": 95,\n      \"viewport\": 30,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll left\",\n      \"previousPosition\": \"(0, 0)\",\n      \"newPosition\": \"(0, 0)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 5,\n      \"keypress\": 95,\n      \"viewport\": 30,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"special key\",\n      \"input\": \"{shift}{downarrow}\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 5,\n      \"keypress\": 94,\n      \"viewport\": 30,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll left\",\n      \"previousPosition\": \"(0, 0)\",\n      \"newPosition\": \"(0, 0)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 4,\n      \"keypress\": 94,\n      \"viewport\": 30,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"enter\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 4,\n      \"keypress\": 93,\n      \"viewport\": 30,\n      \"navigation\": 11,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"reload\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 67,\n      \"scroll\": 4,\n      \"keypress\": 93,\n      \"viewport\": 30,\n      \"navigation\": 10,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Random Position\",\n      \"subtype\": \"double click\",\n      \"position\": \"(158, 227)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 4,\n      \"keypress\": 93,\n      \"viewport\": 30,\n      \"navigation\": 10,\n      \"smartClick\": 53,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable select Element\",\n      \"subtype\": \"not executable\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 4,\n      \"keypress\": 93,\n      \"viewport\": 30,\n      \"navigation\": 10,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Viewport\",\n    \"value\": {\n      \"viewport\": \"samsung-s10\",\n      \"orientation\": \"portrait\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 4,\n      \"keypress\": 93,\n      \"viewport\": 29,\n      \"navigation\": 10,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"type\",\n      \"input\": \"k\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 4,\n      \"keypress\": 92,\n      \"viewport\": 29,\n      \"navigation\": 10,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"tab\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 4,\n      \"keypress\": 91,\n      \"viewport\": 29,\n      \"navigation\": 10,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll right\",\n      \"previousPosition\": \"(158, 227)\",\n      \"newPosition\": \"(337, 227)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 3,\n      \"keypress\": 91,\n      \"viewport\": 29,\n      \"navigation\": 10,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll down\",\n      \"previousPosition\": \"(337, 227)\",\n      \"newPosition\": \"(337, 292)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 2,\n      \"keypress\": 91,\n      \"viewport\": 29,\n      \"navigation\": 10,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"navigate forward\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 2,\n      \"keypress\": 91,\n      \"viewport\": 29,\n      \"navigation\": 9,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"navigate backward\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 2,\n      \"keypress\": 91,\n      \"viewport\": 29,\n      \"navigation\": 8,\n      \"smartClick\": 52,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable select Element\",\n      \"subtype\": \"not executable\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 66,\n      \"scroll\": 2,\n      \"keypress\": 91,\n      \"viewport\": 29,\n      \"navigation\": 8,\n      \"smartClick\": 51,\n      \"smartCleanup\": 81,\n      \"smartInput\": 10\n    }\n  },\n  \"videos/monkey.cy.js.mp4\"\n]",
+              "code": "const addActionContext = details => cy.addActionContext(details);\n// Extracts available actions with remaining counts and calculates total actions left.\nlet [names, actionsLeft] = Object.entries(actions).reduce((acc, a) => {\n  if (a[1] > 0) return [[...acc[0], a[0]], acc[1] + a[1]];\n  return acc;\n}, [[], 0]);\nconst availableActions = names.length - 1;\nlet index;\nwhile (actionsLeft > 0) {\n  cy.addActionContext({\n    title: \"Actions left\",\n    value: names.reduce((acc, a) => {\n      acc[a] = actions[a];\n      return acc;\n    }, {})\n  });\n  index = names[randInt(0, availableActions)];\n  if (actions[index] > 0) {\n    events[index](addActionContext);\n    cy.wait(delay);\n    actions[index]--;\n    actionsLeft--;\n  } else {\n    // remove the action from the list once it is exhausted\n    delete actions[index];\n    names = names.filter(n => n !== index);\n  }\n}",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.\n    at Context.eval (webpack://misw-4103-monkey/./cypress/support/commands/keboard.js:96:5)\n    at wrapped (http://localhost:3001/__cypress/runner/cypress_runner.js:140147:43)",
+                "diff": null
+              },
+              "uuid": "f89f7bba-55ef-4f73-afb3-cf1f61588eb2",
+              "parentUUID": "1da7b626-1baa-4de9-9a19-2d2c5774b6cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f89f7bba-55ef-4f73-afb3-cf1f61588eb2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29124,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "monkey-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/2025-04-25T01:51:00.835Z",
+        "reportFilename": "monkey-report",
+        "overwite": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

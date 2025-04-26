@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-25T01:51:45.842Z",
+    "end": "2025-04-25T01:52:12.732Z",
+    "duration": 26890,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7eb9732-135c-433c-9f0e-a343406e5ec6",
+      "title": "",
+      "fullFile": "cypress/e2e/monkey.cy.js",
+      "file": "cypress/e2e/monkey.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cbab8136-9467-4f89-89cf-1488d9a0acb0",
+          "title": "monkey",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test random events",
+              "fullTitle": "monkey test random events",
+              "timedOut": null,
+              "duration": 26853,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"Before All\",\n    \"value\": {\n      \"viewport\": \"undefinedxundefined\",\n      \"seed\": 4237411,\n      \"delay\": 1000\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 21,\n      \"scroll\": 79,\n      \"keypress\": 53,\n      \"viewport\": 41,\n      \"navigation\": 32,\n      \"smartClick\": 36,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll down\",\n      \"previousPosition\": \"(0, 0)\",\n      \"newPosition\": \"(0, 388)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 21,\n      \"scroll\": 78,\n      \"keypress\": 53,\n      \"viewport\": 41,\n      \"navigation\": 32,\n      \"smartClick\": 36,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Random Position\",\n      \"subtype\": \"hover\",\n      \"position\": \"(321, 642)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 78,\n      \"keypress\": 53,\n      \"viewport\": 41,\n      \"navigation\": 32,\n      \"smartClick\": 36,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"special key\",\n      \"input\": \"{ctrl}{downarrow}\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 78,\n      \"keypress\": 52,\n      \"viewport\": 41,\n      \"navigation\": 32,\n      \"smartClick\": 36,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll up\",\n      \"previousPosition\": \"(321, 642)\",\n      \"newPosition\": \"(321, 215)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 77,\n      \"keypress\": 52,\n      \"viewport\": 41,\n      \"navigation\": 32,\n      \"smartClick\": 36,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable button Element\",\n      \"subtype\": \"double click\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 77,\n      \"keypress\": 52,\n      \"viewport\": 41,\n      \"navigation\": 32,\n      \"smartClick\": 35,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"navigate forward\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 77,\n      \"keypress\": 52,\n      \"viewport\": 41,\n      \"navigation\": 31,\n      \"smartClick\": 35,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"navigate backward\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 77,\n      \"keypress\": 52,\n      \"viewport\": 41,\n      \"navigation\": 30,\n      \"smartClick\": 35,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"type\",\n      \"input\": \"L\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 77,\n      \"keypress\": 51,\n      \"viewport\": 41,\n      \"navigation\": 30,\n      \"smartClick\": 35,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll right\",\n      \"previousPosition\": \"(321, 215)\",\n      \"newPosition\": \"(801, 215)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 76,\n      \"keypress\": 51,\n      \"viewport\": 41,\n      \"navigation\": 30,\n      \"smartClick\": 35,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable button Element\",\n      \"subtype\": \"not executable\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 76,\n      \"keypress\": 51,\n      \"viewport\": 41,\n      \"navigation\": 30,\n      \"smartClick\": 34,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"navigate forward\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 76,\n      \"keypress\": 51,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 34,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"enter\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 76,\n      \"keypress\": 50,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 34,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"tab\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 76,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 34,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable button Element\",\n      \"subtype\": \"hover\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 76,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 33,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable select Element\",\n      \"subtype\": \"not executable\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 20,\n      \"scroll\": 76,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 32,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Random Position\",\n      \"subtype\": \"right click\",\n      \"position\": \"(686, 539)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 19,\n      \"scroll\": 76,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 32,\n      \"smartCleanup\": 19,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Data Clean Up\",\n    \"value\": {\n      \"type\": \"clear local storage\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 19,\n      \"scroll\": 76,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 32,\n      \"smartCleanup\": 18,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Click\",\n    \"value\": {\n      \"type\": \"Clickable select Element\",\n      \"subtype\": \"not executable\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 19,\n      \"scroll\": 76,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 29,\n      \"smartClick\": 31,\n      \"smartCleanup\": 18,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"reload\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 19,\n      \"scroll\": 76,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 28,\n      \"smartClick\": 31,\n      \"smartCleanup\": 18,\n      \"smartInput\": 24\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll up\",\n      \"previousPosition\": \"(686, 539)\",\n      \"newPosition\": \"(686, 139)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 19,\n      \"scroll\": 75,\n      \"keypress\": 49,\n      \"viewport\": 41,\n      \"navigation\": 28,\n      \"smartClick\": 31,\n      \"smartCleanup\": 18,\n      \"smartInput\": 24\n    }\n  },\n  \"videos/monkey.cy.js.mp4\"\n]",
+              "code": "const addActionContext = details => cy.addActionContext(details);\n// Extracts available actions with remaining counts and calculates total actions left.\nlet [names, actionsLeft] = Object.entries(actions).reduce((acc, a) => {\n  if (a[1] > 0) return [[...acc[0], a[0]], acc[1] + a[1]];\n  return acc;\n}, [[], 0]);\nconst availableActions = names.length - 1;\nlet index;\nwhile (actionsLeft > 0) {\n  cy.addActionContext({\n    title: \"Actions left\",\n    value: names.reduce((acc, a) => {\n      acc[a] = actions[a];\n      return acc;\n    }, {})\n  });\n  index = names[randInt(0, availableActions)];\n  if (actions[index] > 0) {\n    events[index](addActionContext);\n    cy.wait(delay);\n    actions[index]--;\n    actionsLeft--;\n  } else {\n    // remove the action from the list once it is exhausted\n    delete actions[index];\n    names = names.filter(n => n !== index);\n  }\n}",
+              "err": {
+                "message": "CypressError: `cy.trigger()` failed because it requires a DOM element, window or document.\n\nThe subject received was:\n\n  > `{}`\n\nThe previous command that ran was:\n\n  > `cy.rClick()`",
+                "estack": "CypressError: `cy.trigger()` failed because it requires a DOM element, window or document.\n\nThe subject received was:\n\n  > `{}`\n\nThe previous command that ran was:\n\n  > `cy.rClick()`\n    at isElement (http://localhost:3001/__cypress/runner/cypress_runner.js:147049:58)\n    at validateType (http://localhost:3001/__cypress/runner/cypress_runner.js:146898:14)\n    at Object.isType (http://localhost:3001/__cypress/runner/cypress_runner.js:146929:7)\n    at $Cy.pushSubject (http://localhost:3001/__cypress/runner/cypress_runner.js:140597:22)\n    at wrapped (http://localhost:3001/__cypress/runner/cypress_runner.js:140154:19)\nFrom Your Spec Code:\n    at Array.eval (webpack://misw-4103-monkey/./cypress/support/commands/mouse.js:119:24)\n    at Context.eval (webpack://misw-4103-monkey/./cypress/support/commands/mouse.js:131:37)\n    at wrapped (http://localhost:3001/__cypress/runner/cypress_runner.js:140155:19)",
+                "diff": null
+              },
+              "uuid": "7796ff8e-b1a3-41de-9ce6-363e617772d6",
+              "parentUUID": "cbab8136-9467-4f89-89cf-1488d9a0acb0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7796ff8e-b1a3-41de-9ce6-363e617772d6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 26853,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "monkey-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/2025-04-25T01:51:42.271Z",
+        "reportFilename": "monkey-report",
+        "overwite": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

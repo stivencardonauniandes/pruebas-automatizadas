@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-04-25T01:53:43.606Z",
+    "end": "2025-04-25T01:53:58.132Z",
+    "duration": 14526,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "74e37805-3573-4c8a-b0e2-319a4ea6fdac",
+      "title": "",
+      "fullFile": "cypress/e2e/monkey.cy.js",
+      "file": "cypress/e2e/monkey.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cad34a41-f070-481e-a932-f2e46d1147c6",
+          "title": "monkey",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test random events",
+              "fullTitle": "monkey test random events",
+              "timedOut": null,
+              "duration": 14502,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"Before All\",\n    \"value\": {\n      \"viewport\": \"undefinedxundefined\",\n      \"seed\": 12368386,\n      \"delay\": 1000\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 28,\n      \"scroll\": 68,\n      \"keypress\": 43,\n      \"viewport\": 3,\n      \"navigation\": 20,\n      \"smartClick\": 47,\n      \"smartCleanup\": 86,\n      \"smartInput\": 9\n    }\n  },\n  {\n    \"title\": \"Keypress\",\n    \"value\": {\n      \"type\": \"enter\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 28,\n      \"scroll\": 68,\n      \"keypress\": 42,\n      \"viewport\": 3,\n      \"navigation\": 20,\n      \"smartClick\": 47,\n      \"smartCleanup\": 86,\n      \"smartInput\": 9\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"reload\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 28,\n      \"scroll\": 68,\n      \"keypress\": 42,\n      \"viewport\": 3,\n      \"navigation\": 19,\n      \"smartClick\": 47,\n      \"smartCleanup\": 86,\n      \"smartInput\": 9\n    }\n  },\n  {\n    \"title\": \"Navigation\",\n    \"value\": {\n      \"type\": \"navigate backward\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 28,\n      \"scroll\": 68,\n      \"keypress\": 42,\n      \"viewport\": 3,\n      \"navigation\": 18,\n      \"smartClick\": 47,\n      \"smartCleanup\": 86,\n      \"smartInput\": 9\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll up\",\n      \"previousPosition\": \"(0, 0)\",\n      \"newPosition\": \"(0, 0)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 28,\n      \"scroll\": 67,\n      \"keypress\": 42,\n      \"viewport\": 3,\n      \"navigation\": 18,\n      \"smartClick\": 47,\n      \"smartCleanup\": 86,\n      \"smartInput\": 9\n    }\n  },\n  {\n    \"title\": \"Scroll\",\n    \"value\": {\n      \"type\": \"scroll down\",\n      \"previousPosition\": \"(0, 0)\",\n      \"newPosition\": \"(0, 279)\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 28,\n      \"scroll\": 66,\n      \"keypress\": 42,\n      \"viewport\": 3,\n      \"navigation\": 18,\n      \"smartClick\": 47,\n      \"smartCleanup\": 86,\n      \"smartInput\": 9\n    }\n  },\n  {\n    \"title\": \"Data Clean Up\",\n    \"value\": {\n      \"type\": \"clear cookies\"\n    }\n  },\n  {\n    \"title\": \"Actions left\",\n    \"value\": {\n      \"click\": 28,\n      \"scroll\": 66,\n      \"keypress\": 42,\n      \"viewport\": 3,\n      \"navigation\": 18,\n      \"smartClick\": 47,\n      \"smartCleanup\": 85,\n      \"smartInput\": 9\n    }\n  },\n  \"videos/monkey.cy.js.mp4\"\n]",
+              "code": "const addActionContext = details => cy.addActionContext(details);\n// Extracts available actions with remaining counts and calculates total actions left.\nlet [names, actionsLeft] = Object.entries(actions).reduce((acc, a) => {\n  if (a[1] > 0) return [[...acc[0], a[0]], acc[1] + a[1]];\n  return acc;\n}, [[], 0]);\nconst availableActions = names.length - 1;\nlet index;\nwhile (actionsLeft > 0) {\n  cy.addActionContext({\n    title: \"Actions left\",\n    value: names.reduce((acc, a) => {\n      acc[a] = actions[a];\n      return acc;\n    }, {})\n  });\n  index = names[randInt(0, availableActions)];\n  if (actions[index] > 0) {\n    events[index](addActionContext);\n    cy.wait(delay);\n    actions[index]--;\n    actionsLeft--;\n  } else {\n    // remove the action from the list once it is exhausted\n    delete actions[index];\n    names = names.filter(n => n !== index);\n  }\n}",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input`, but never found it.\n    at Context.eval (webpack://misw-4103-monkey/./cypress/support/commands/keboard.js:96:5)\n    at wrapped (http://localhost:3001/__cypress/runner/cypress_runner.js:140147:43)",
+                "diff": null
+              },
+              "uuid": "1e023224-e66b-43f5-94e7-0edd7c464235",
+              "parentUUID": "cad34a41-f070-481e-a932-f2e46d1147c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1e023224-e66b-43f5-94e7-0edd7c464235"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14502,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "monkey-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/2025-04-25T01:53:40.326Z",
+        "reportFilename": "monkey-report",
+        "overwite": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
