@@ -1,0 +1,1 @@
+module.exports = { scenario: "e02", diffPixels: 164190 };
